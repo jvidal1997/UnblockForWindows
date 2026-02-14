@@ -24,6 +24,11 @@ from PyQt6.QtCore import QThread, pyqtSignal, Qt, QPropertyAnimation, QByteArray
 from PyQt6.QtGui import QIcon, QPixmap, QPainter, QFont, QAction
 from PyQt6.QtSvg import QSvgRenderer
 
+# ----------------------------
+# Global Variables
+# ----------------------------
+APP_NAME = "Unblock for Windows"
+
 
 # ----------------------------
 # Detect Windows Theme
@@ -36,7 +41,7 @@ def is_dark_mode():
         )
         value, _ = winreg.QueryValueEx(registry, "AppsUseLightTheme")
         return value == 0  # Dark mode
-    except:
+    except _:
         return False
 
 # ----------------------------
@@ -129,7 +134,7 @@ class UnblockWorker(QThread):
 class UnblockApp(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Unblock for Windows")
+        self.setWindowTitle(APP_NAME)
 
         # Set window icon from embedded SVG
         self.setWindowIcon(self.get_embedded_icon())
@@ -144,7 +149,7 @@ class UnblockApp(QWidget):
         try:
             hwnd = int(self.winId())
             apply_mica(hwnd)
-        except:
+        except _:
             pass
 
         self.selected_paths = []
@@ -230,7 +235,7 @@ class UnblockApp(QWidget):
    svg:specialfontid="undefined"
    svg:id1="341"
    svg:id2="666"
-   svg:companyname="Unblock for Windows"
+   svg:companyname=APP_NAME
    svg:companytagline=""
    version="1.1"
    viewBox="65 148.61381 91.102356 119.78344"
@@ -325,7 +330,7 @@ class UnblockApp(QWidget):
         if self.tray.isVisible():
             self.hide()
             self.tray.showMessage(
-                "Unblock for Windows",
+                APP_NAME,
                 "Application minimized to tray. Click the tray icon to restore.",
                 QSystemTrayIcon.MessageIcon.Information,
                 3000
