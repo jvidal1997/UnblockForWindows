@@ -1,30 +1,38 @@
 ![Unblock for Windows Logo](resources/logo-full.svg)
 
-**Unblock for Windows** is a modern utility to unblock downloaded files and folders on Windows. It supports multi-file and multi-folder selection, drag & drop, and features a modern, theme-aware interface with Windows 11 Mica blur. Ideal for quickly removing the "blocked" status from files downloaded from the internet.
+**Unblock for Windows** is a modern, lightweight utility for Windows that allows users to unblock downloaded files and folders with ease. Designed for productivity and convenience, it supports multi-file/folder selection, drag & drop, and provides pause, resume, and cancel options for long operations.
+
+**Use Case:**
+
+Perfect for developers, IT professionals, and power users who frequently download files from the internet and want to quickly remove the "blocked" security warning that Windows applies to downloaded files.
 
 ------
 
 ## Features
 
-- ✅ **Multi-file & multi-folder selection**
-- ✅ **Drag & Drop support**
-- ✅ **Pause / Resume / Cancel** ongoing operations
-- ✅ **Progress bar and detailed status log**
-- ✅ **Right-click to remove items from selection**
-- ✅ **System tray integration**
+- **Multi-file & multi-folder selection**
+- **Drag & Drop support**
+- **Pause / Resume / Cancel** ongoing operations
+- **Progress bar and detailed status log**
+- **Right-click to remove items from selection**
+- **System tray integration**
   - Minimize to tray
   - Click tray icon to restore window
   - Tray menu with Show/Exit
-- ✅ **Modern, theme-aware UI**
+- **Modern, theme-aware UI**
   - Detects Windows dark/light mode
   - Windows 11 Mica blur for enhanced aesthetics
-- ✅ **Distributable as a standalone Python application**
+- **Distributable as a standalone Python application**
 
 ------
 
 ## Screenshots
 
-*(Add your screenshots here)*
+![Start Screen](resources/screenshots/GUI-start.png)
+
+![Progress Bar](resources/screenshots/GUI-loading2.png)
+
+![Successfully Unblocked](resources/screenshots/GUI-completed.png)
 
 ------
 
@@ -62,7 +70,7 @@ pip install -r requirements.txt
 **`requirements.txt` should contain:**
 
 ```
-PyQt6>=6.5
+PyQt6>=6.9.1
 ```
 
 ### 4. Run the app:
@@ -83,21 +91,6 @@ python unblock_app.py
 4. Use **Pause / Resume** for long operations, or **Cancel** to stop.
 5. The **progress bar** and **log panel** show real-time updates.
 6. Minimize the app — it will move to the **system tray**. Click the tray icon to restore.
-
-------
-
-## Packaging for Distribution
-
-To create a standalone executable:
-
-```
-pip install pyinstaller
-pyinstaller --noconfirm --onefile --windowed unblock_app.py
-```
-
-- `--onefile` creates a single `.exe` file.
-- `--windowed` ensures no console window appears.
-- Add your icons in the `resources` folder for branding.
 
 ------
 
