@@ -6,6 +6,11 @@
 
 Perfect for developers, IT professionals, and power users who frequently download files from the internet and want to quickly remove the "blocked" security warning that Windows applies to downloaded files.
 
+## Sick of this? You've found the solution!
+<img width="1110" height="758" alt="image" src="https://github.com/user-attachments/assets/fb6f77b2-6d39-413f-bf48-0a529c0b5e7f" />
+
+
+
 ------
 
 ## Features
