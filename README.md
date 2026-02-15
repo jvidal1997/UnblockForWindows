@@ -1,4 +1,4 @@
-![Unblock for Windows Logo](resources/logo-full.svg)
+<img width="1280" height="640" alt="logo-blue-full-w-shadow2" src="https://github.com/user-attachments/assets/a8c3e34a-ffcb-4684-aa1a-263cf2ea64ff" />
 
 **Unblock for Windows** is a modern, lightweight utility for Windows that allows users to unblock downloaded files and folders with ease. Designed for productivity and convenience, it supports multi-file/folder selection, drag & drop, and provides pause, resume, and cancel options for long operations.
 
