@@ -81,10 +81,8 @@ PyQt6>=6.9.1
 ### 4. Run the app:
 
 ```
-python unblock_app.py
+python main.py
 ```
-
-*(Replace `unblock_app.py` with your main script name.)*
 
 ------
 
