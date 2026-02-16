@@ -129,4 +129,4 @@ This project is licensed under the **MIT License**.
 
 ## Support / Contact
 
-For questions or support, contact: **youremail@example.com**
+For questions or support, contact: **jvidal1997@yahoo.com**
